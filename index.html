@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel = "icon" href ="imgs/tab_logo.png" type = "image/x-icon">
+    <title>Cheems store</title>
+    <style>
+
+
+/* Slideshow container */
+.slideshow-container {
+    padding: 10px;
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+</style>
+</head>
+<body>
+    <!-- Trang bìa -->
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="imgs/logo_2.png" width="200px"></a>
+                </div>
+                <nav>
+                    <ul id="menuItems">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="products.html">Sản phẩm</a></li>
+                        <li><a href="about.html">Về trang web</a></li>
+                        <li><a href="https://www.facebook.com/duy.huu.52438174/">Liên hệ</a></li>
+                        <li><a href="account.html">Tài khoản</a></li>   
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="imgs/shopping-cart.png" width="30px" height="30px"></a>
+                <img src="imgs/—Pngtree—menu vector icon_4236988.png" class="menu-icon" width="30px" height="30px" onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Máy tính cao cấp và phụ kiện</h1>
+                    <p>Cung cấp đầy đủ link kiện máy tính, phụ kiện hỗ trợ.Tối ưu trải nghiệm của <br>bạn trong quá trình làm việc.<br> Chúng tôi luôn cam kết cung cấp những sản phẩm tốt nhất cho khách hàng.</p>
+                    <a href="products.html"class="btn">Bắt đầu ngay &#x279D;</a>
+                </div>
+                <div class="col-2">
+                    <a href="#"><img src="imgs/500.webp"></a>
+                </div>
+            </div>    
+        </div>
+    </div>
+    <!--Slide-->
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          
+          <img src="imgs/sl1.webp" style="width:100%">
+         
+        </div>
+        
+        <div class="mySlides fade">
+          
+          <img src="imgs/sl2.webp" style="width:100%">
+          
+        </div>
+        
+        <div class="mySlides fade">
+          
+          <img src="imgs/sl3.webp" style="width:100%">
+          
+        </div>
+        <div class="mySlides fade">
+          
+            <img src="imgs/sl4.webp" style="width:100%">
+            
+          </div>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span>
+        </div>
+        
+        <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+        
+    <!-- Preview sản phẩm -->
+    <div class="small-container">
+        <h2 class="title">Sản phẩm vừa ra mắt</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href=product-details2.html><img src="imgs/sp1.webp"></a>
+                <h4>Laptop gaming<br>Acer Predator Helios 300 PH315 55 751D</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>54.990.000 VND</p>
+            </div>
+            <div class="col-4">
+                <a href=product-details3.html><img src="imgs/sp4.webp"></a>
+                <h4>Chuột Logitech<br>G Pro X Superlight Wireless Red</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>2.990.000 VND</p>
+            </div>
+            <div class="col-4">
+<a href=product-details.html><img src="imgs/sp3.webp"></a>
+                <h4>Tai nghe Logitech<br>Logitech G775 off-white</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>2.490.000 VND</p>
+            </div>
+            <div class="col-4">
+                <a href=product-details4.html><img src="imgs/sp2.webp"></a>
+                <h4>Máy tính chơi game <br>PC gaming GVN POSEIDON S WHITE</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>102.990.000 VND</p>
+            </div>
+        </div>
+    </div>
+    <!-- Sản phẩm đang ưu đãi -->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="imgs/offer.png" class="offer-img">
+                </div>
+                <div class="col-2">
+                   <p style="font-weight: bolder;font-size: large;"class="btn">ƯU ĐÃI LỚN</p>
+                   <h1>ASROCK Radeon RX 6800 Phantom Gaming D 16G OC</h1>
+                   <small>
+                    Mainboard ASROCK Z590 OC Formula là bo mạch chủ duy nhất trên thị trường được thiết kế bởi một chuyên gia ép xung chính hãng “Nick Shih”. Chỉ sử dụng các thành phần hiệu suất được lựa chọn đặc biệt, chuyên gia ép xung đã đẩy bo mạch chủ Z590 đến những giới hạn tối đa của nó.
+                   </small><br>
+                   <a href="product-details6.html" class="btn">Mua ngay &#x279D;</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Nhận xét của khách hàng -->
+    <div class="feedback" style="padding-top: 100px;">
+        <div class="small-container">
+            <h2 class="title">Nhận xét của khác hàng</h2>
+            <div class="row">
+                <div class="col-3">
+                    <p>Làm công chúa đã lâu mới được mua cho cái PC bắn Valorant, phải công nhận là mua đồ của shop vừa rẻ vừa xịn. Cho luôn 5 sao.</p>
+                    <img src="imgs/user1.jpg">
+                    <h3>Kamisato Ayaka</h3>
+                </div>
+                <div class="col-3">
+                    <p>Trang này rất uy tín. Tôi sẽ đầu tư vào công ty này. Cảm ơn shop nhiều.</p>
+                    <img src="imgs/user2.jpg">
+                    <h3>Mark Zuckerberg</h3>
+                </div>
+                <div class="col-3">
+                    
+                    <p>Biết tại sao con Yasuo không thể bị nhốt ở ngoài cửa không, tại vì nó Ha sa gi (Has a key), hahahahah.</p>
+                    <img src="imgs/user3.jpg">
+                    <h3>Rì mai</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Brands -->
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="imgs/br1.png">
+                </div>
+                <div class="col-5">
+                    <img src="imgs/br2.png">
+                </div>
+                <div class="col-5">
+                    <img src="imgs/br3.png">
+                </div>
+                <div class="col-5">
+                    <img src="imgs/br4.png">
+                </div>
+                <div class="col-5">
+                    <img src="imgs/br5.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Tải ngay</h3>
+                    <p>Khả dụng trên cả ios và android</p>
+                    <div class="app-logo">
+                        <img src="imgs/app-store.png">
+                        <img src="imgs/play-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="imgs/logo.svg">
+                    <p>Mua PC Gaming, laptop gaming, card màn hình, màn hình máy tính, ghế gaming, thiết bị chơi game như PS5 hàng đầu Việt Nam bảo hành chính hãng. Mua online nhận ưu đãi hấp dẫn với nhiều chương trình đặc biệt như ngày 8/3, b2s, noel...</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Nền tảng khác</h3>
+                    <ul>
+                        <li>Shopee</li>
+                        <li>Lazada</li>
+                        <li>Tiki</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Youtube</li>
+                        <li>Instagram</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright: Duy</p>
+        </div>
+    </div>
+    <!-- Js for toggle menu -->
+    <script>
+        var menuItems = document.getElementById("menuItems");
+        menuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if( menuItems.style.maxHeight == "0px"){
+                menuItems.style.maxHeight = "200px";
+            }
+            else{
+                menuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel = "icon" href ="imgs/tab_logo.png" type = "image/x-icon">
+    <title>Chi tiết sản phẩm - PC store</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="imgs/logo_2.png" width="100px"></a>
+            </div>
+            <nav>
+                <ul id="menuItems">
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a href="products.html">Sản phẩm</a></li>
+                    <li><a href="about.html">Về trang web</a></li>
+                    <li><a href="https://www.facebook.com/duy.huu.52438174/">Liên hệ</a></li>
+                    <li><a href="account.html">Tài khoản</a></li>   
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="imgs/shopping-cart.png" width="30px" height="30px"></a>
+            <img src="imgs/—Pngtree—menu vector icon_4236988.png" class="menu-icon" width="30px" height="30px" onclick="menutoggle()">
+        </div>   
+    </div>
+    <!-- Thông tin từng sản phẩm -->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="imgs/sp7.webp" width="100%" id="productImg">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="imgs/g1.webp" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="imgs/g2.webp" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="imgs/g3.webp" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="imgs/g4.webp" width="100%" class="small-img">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="col-2">
+                <p>Trang chủ /Sản phẩm /Ghế chơi game DXRacer G Series NW</p>
+                <h1>Ghế chơi game DXRacer G Series NW</h1>
+                <h4>Giá: 5,490,000 VNĐ </h4>
+                <h5>Số lượng  <input type="number" value="1"></h5>
+               
+                <a href="" class="btn">Thêm vào giỏ hàng</a>
+                <h3>Thông tin sản phẩm <i class="fa fa-indent"></i></h3>
+                <br>    
+                <p>DXRacer G Series NW là chiếc ghế gaming giá rẻ so với các dòng sản phẩm ở cùng phân khúc. Được đánh giá cao bởi chất lượng và mức giá hợp lý mà người dùng nào cũng muốn sở hữu. Nếu bạn đang tìm kiếm một chiếc ghế thoải mái cho thời gian làm việc và giải trí thì đây chính xác là sản phẩm dành cho bạn.</p>
+
+            </div>
+        </div>
+    </div>
+    <!-- title -->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Sản phẩm liên quan</h2>
+            <a href="products.html">View more</a>
+        </div>
+    </div>
+    <!-- Sản phẩm khác -->
+    <div class="small-container">
+        <div class="row">
+            <div class="col-4">
+                <a href=product-details2.html><img src="imgs/sp1.webp"></a>
+                <h4>Laptop gaming<br>Acer Predator Helios 300 PH315 55 751D</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>54.990.000 VND</p>
+            </div>
+            <div class="col-4">
+                <a href=product-details3.html><img src="imgs/sp4.webp"></a>
+                <h4>Chuột Logitech<br>G Pro X Superlight Wireless Red</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>2.990.000 VND</p>
+            </div>
+            <div class="col-4">
+                <a href=product-details.html><img src="imgs/sp3.webp"></a>
+                <h4>Tai nghe Logitech<br>G535 LIGHTSPEED Wireless Black</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>2.490.000 VND</p>
+            </div>
+            <div class="col-4">
+                <a href=product-details4.html><img src="imgs/sp2.webp"></a>
+                <h4>Máy tính chơi game <br>PC gaming GVN POSEIDON S WHITE</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <p>102.990.000 VND</p>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Tải ngay</h3>
+                    <p>Khả dụng trên cả ios và android</p>
+                    <div class="app-logo">
+                        <img src="imgs/app-store.png">
+                        <img src="imgs/play-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="imgs/logo.svg">
+                    <p>Mua PC Gaming, laptop gaming, card màn hình, màn hình máy tính, ghế gaming, thiết bị chơi game như PS5 hàng đầu Việt Nam bảo hành chính hãng. Mua online nhận ưu đãi hấp dẫn với nhiều chương trình đặc biệt như ngày 8/3, b2s, noel...</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Nền tảng khác</h3>
+                    <ul>
+                        <li>Shopee</li>
+                        <li>Lazada</li>
+                        <li>Tiki</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Youtube</li>
+                        <li>Instagram</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright: Duy</p>
+        </div>
+    </div>
+    <!-- Js for toggle menu -->
+    <script>
+        var menuItems = document.getElementById("menuItems");
+        menuItems.style.maxHeight = "0px";
+        function menutoggle(){
+            if( menuItems.style.maxHeight == "0px"){
+                menuItems.style.maxHeight = "200px";
+            }
+            else{
+                menuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+    <!-- Js for pruduct gallary -->
+    <script>
+        var productImg = document.getElementById("productImg");
+        var smallImg = document.getElementsByClassName("small-img");
+        smallImg[0].onclick = function(){
+            productImg.src = smallImg[0].src;
+        }
+        smallImg[1].onclick = function(){
+            productImg.src = smallImg[1].src;
+        }
+        smallImg[2].onclick = function(){
+            productImg.src = smallImg[2].src;
+        }
+        smallImg[3].onclick = function(){
+            productImg.src = smallImg[3].src;
+        }
+    </script>
+</body>
+</html>
