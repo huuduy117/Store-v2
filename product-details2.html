@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.8/dist/sweetalert2.all.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel = "icon" href ="imgs/tab_logo.png" type = "image/x-icon">
@@ -57,7 +59,7 @@
                 <h4>Giá: 44,990,000 VNĐ </h4>
                 <h5>Số lượng  <input type="number" value="1"></h5>
                
-                <a href="" class="btn" onclick="addToCart()">Thêm vào giỏ hàng</a>
+                <a href="" class="btn">Thêm vào giỏ hàng</a>
                 <h3>Thông tin sản phẩm <i class="fa fa-indent"></i></h3>
                 <br>    
                 <p>Acer Predator Helios 300 là một trong những dòng laptop gaming mới nhất có trên thị trường, được trang bị cấu hình mạnh mẽ, thiết kế hầm hố, hiệu năng ấn tượng,...Nếu bạn đang tìm cho riêng mình dòng laptop gaming chất lượng cân được mọi tựa game thì  Acer Predator Helios 300 PH315 55 751D sẽ là sự lựa chọn bạn không nên bỏ qua.</p>
@@ -174,11 +176,22 @@
                 menuItems.style.maxHeight = "0px";
             }
         }
-        function addToCart(){
-            alert("Thêm vào giỏ hàng thành công")
-        
-        }
     </script>
+        <script>
+            $(".btn").click(function () {
+              swal.fire({
+                  type: "success",
+                  title: "Thêm vào giỏ hàng thành công ",
+                  showConfirmButton: false,
+                  timer: 0,
+                })
+                .then((result) => {
+                  if (result.dismiss === Swal.DismissReason.timer) {
+                    $("#new_reminder").modal("hide");
+                  }
+                });
+            });
+          </script>
     <!-- Js for pruduct gallary -->
     <script>
         var productImg = document.getElementById("productImg");

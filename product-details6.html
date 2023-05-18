@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.8/dist/sweetalert2.all.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel = "icon" href ="imgs/tab_logo.png" type = "image/x-icon">
@@ -174,11 +176,26 @@
                 menuItems.style.maxHeight = "0px";
             }
         }
-        function addToCart(){
-            alert("Thêm vào giỏ hàng thành công")
+        // function addToCart(){
+        //     alert("Thêm vào giỏ hàng thành công")
         
-        }
+        // }
     </script>
+        <script>
+            $(".btn").click(function () {
+              swal.fire({
+                  type: "success",
+                  title: "Thêm vào giỏ hàng thành công ",
+                  showConfirmButton: true,
+                  timer:5000,
+                })
+                .then((result) => {
+                  if (result.dismiss === Swal.DismissReason.timer) {
+                    $("#new_reminder").modal("hide");
+                  }
+                });
+            });
+          </script>
     <!-- Js for pruduct gallary -->
     <script>
         var productImg = document.getElementById("productImg");
