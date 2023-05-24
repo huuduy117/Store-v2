@@ -1,141 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel = "icon" href ="imgs/tab_logo.png" type = "image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="icon" href="imgs/tab_logo.png" type="image/x-icon" />
     <title>Login Page</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="navbar">
-            <div class="logo">
-                <a href="index.html"><img src="imgs/logo_2.png" width="100px"></a>
-            </div>
-            <nav>
-                <ul id="menuItems">
-                    <li><a href="index.html">Trang chủ</a></li>
-                    <li><a href="products.html">Sản phẩm</a></li>
-                    <li><a href="about.html">Về trang web</a></li>
-                    <li><a href="https://www.facebook.com/duy.huu.52438174/">Liên hệ</a></li>
-                    <li><a href="account.html">Tài khoản</a></li>   
-                </ul>
-            </nav>
-            <a href="cart.html"><img src="imgs/shopping-cart.png" width="30px" height="30px"></a>
-            <img src="imgs/—Pngtree—menu vector icon_4236988.png" class="menu-icon" width="30px" height="30px" onclick="menutoggle()">
-        </div>   
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="imgs/logo_2.png" width="100px" /></a>
+        </div>
+        <nav>
+          <ul id="menuItems">
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="products.html">Sản phẩm</a></li>
+            <li><a href="about.html">Về trang web</a></li>
+            <li>
+              <a href="https://www.facebook.com/duy.huu.52438174/">Liên hệ</a>
+            </li>
+            <li><a href="account.html">Tài khoản</a></li>
+          </ul>
+        </nav>
+        <a href="cart.html"
+          ><img src="imgs/shopping-cart.png" width="30px" height="30px"
+        /></a>
+        <img
+          src="imgs/—Pngtree—menu vector icon_4236988.png"
+          class="menu-icon"
+          width="30px"
+          height="30px"
+          onclick="menutoggle()"
+        />
+      </div>
     </div>
     <!-- Tài khoản -->
     <div class="account-page">
-        <div class="container">
-            <div class="row">
-                <div class="col-2">
-                    <img src="imgs/offer.png" width="100%">
-                </div>
-                <div class="col-2">
-                    <div class="form-container">
-                        <div class="form-btn">
-                            <span onclick="login()">Đăng ký</span>
-                            <span onclick="register()">Đăng nhập</span>
-                            <hr id="underline">
-                        </div>
-                        <form id="LoginForm">
-                            <input id="username" type="text" placeholder="Tên đăng nhập">
-                            <input id="password" type="password" placeholder="Mật khẩu">
-                            <a href="index.html" onclick="dangnhap()" class="btn" style="color: white;">Đăng nhập</a>
-                            
-                        </form>
-                        <form  id="RegForm">
-                            <input id="username" type="text" placeholder="Tên đăng nhập">
-                            <input id="email" type="text" placeholder="Email/SĐT">
-                            <input id="password" type="password" placeholder="Mật khẩu">
-                            <a href="index.html" onclick="dangky()" class="btn" style="color: white;">Đăng ký</a>
-                        </form>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-2">
+            <img src="imgs/offer.png" width="100%" />
+          </div>
+          <div class="col-2">
+            <div class="form-container">
+              <div class="form-btn">
+                <span onclick="login()">Đăng ký</span>
+                <span onclick="register()">Đăng nhập</span>
+                <hr id="underline" />
+              </div>
+              <form id="LoginForm">
+                <input id="username" type="text" placeholder="Tên đăng nhập" />
+                <input id="password" type="password" placeholder="Mật khẩu" />
+                <a
+                  href="index.html"
+                  onclick="dangnhap()"
+                  class="btn"
+                  style="color: white"
+                  >Đăng nhập</a
+                >
+              </form>
+              <form id="RegForm">
+                <input id="username" type="text" placeholder="Tên đăng nhập" />
+                <input id="email" type="text" placeholder="Email/SĐT" />
+                <input id="password" type="password" placeholder="Mật khẩu" />
+                <a
+                  href="index.html"
+                  onclick="dangky()"
+                  class="btn"
+                  style="color: white"
+                  >Đăng ký</a
+                >
+              </form>
             </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- footer -->
     <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footer-col-1">
-                    <h3>Tải ngay</h3>
-                    <p>Khả dụng trên cả ios và android</p>
-                    <div class="app-logo">
-                        <img src="imgs/app-store.png">
-                        <img src="imgs/play-store.png">
-                    </div>
-                </div>
-                <div class="footer-col-2">
-                    <img src="imgs/logo.svg">
-                    <p>Mua PC Gaming, laptop gaming, card màn hình, màn hình máy tính, ghế gaming, thiết bị chơi game như PS5 hàng đầu Việt Nam bảo hành chính hãng. Mua online nhận ưu đãi hấp dẫn với nhiều chương trình đặc biệt như ngày 8/3, b2s, noel...</p>
-                </div>
-                <div class="footer-col-3">
-                    <h3>Nền tảng khác</h3>
-                    <ul>
-                        <li>Shopee</li>
-                        <li>Lazada</li>
-                        <li>Tiki</li>
-                    </ul>
-                </div>
-                <div class="footer-col-4">
-                    <h3>Follow us</h3>
-                    <ul>
-                        <li>Facebook</li>
-                        <li>Youtube</li>
-                        <li>Instagram</li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Tải ngay</h3>
+            <p>Khả dụng trên cả ios và android</p>
+            <div class="app-logo">
+              <img src="imgs/app-store.png" />
+              <img src="imgs/play-store.png" />
             </div>
-            <hr>
-            <p class="copyright">Copyright: Duy</p>
+          </div>
+          <div class="footer-col-2">
+            <img src="imgs/logo.svg" />
+            <p>
+              Mua PC Gaming, laptop gaming, card màn hình, màn hình máy tính,
+              ghế gaming, thiết bị chơi game như PS5 hàng đầu Việt Nam bảo hành
+              chính hãng. Mua online nhận ưu đãi hấp dẫn với nhiều chương trình
+              đặc biệt như ngày 8/3, b2s, noel...
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Nền tảng khác</h3>
+            <ul>
+              <li>Shopee</li>
+              <li>Lazada</li>
+              <li>Tiki</li>
+            </ul>
+          </div>
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Youtube</li>
+              <li>Instagram</li>
+            </ul>
+          </div>
         </div>
+        <hr />
+        <p class="copyright">Copyright: Duy</p>
+      </div>
     </div>
     <!-- Js for toggle menu -->
     <script>
-        var menuItems = document.getElementById("menuItems");
-        menuItems.style.maxHeight = "0px";
-        function menutoggle(){
-            if( menuItems.style.maxHeight == "0px"){
-                menuItems.style.maxHeight = "200px";
-            }
-            else{
-                menuItems.style.maxHeight = "0px";
-            }
+      var menuItems = document.getElementById("menuItems");
+      menuItems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (menuItems.style.maxHeight == "0px") {
+          menuItems.style.maxHeight = "200px";
+        } else {
+          menuItems.style.maxHeight = "0px";
         }
+      }
     </script>
     <!-- Js for toggle form -->
     <script>
-        var LoginForm = document.getElementById("LoginForm");
-        var RegForm = document.getElementById("RegForm");
-        var Indicator = document.getElementById("underline");
-        function login(){
-            RegForm.style.transform = "translateX(0px)";
-            LoginForm.style.transform = "translateX(0px)";
-            Indicator.style.transform = "translateX(0px)";
-        }
-        function register(){
-            RegForm.style.transform = "translateX(300px)";
-            LoginForm.style.transform = "translateX(300px)";
-            Indicator.style.transform = "translateX(100px)";
-        }
-        function dangky(){
-            alert("Đăng ký thành công")
-        
-        }
-        function dangnhap(){
-            alert("Đăng nhập thành công")
-        
-        }
+      var LoginForm = document.getElementById("LoginForm");
+      var RegForm = document.getElementById("RegForm");
+      var Indicator = document.getElementById("underline");
+      function login() {
+        RegForm.style.transform = "translateX(0px)";
+        LoginForm.style.transform = "translateX(0px)";
+        Indicator.style.transform = "translateX(0px)";
+      }
+      function register() {
+        RegForm.style.transform = "translateX(300px)";
+        LoginForm.style.transform = "translateX(300px)";
+        Indicator.style.transform = "translateX(100px)";
+      }
+      function dangky() {
+        alert("Đăng ký thành công");
+      }
+      function dangnhap() {
+        alert("Đăng nhập thành công");
+      }
     </script>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
